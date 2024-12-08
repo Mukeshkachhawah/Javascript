@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: auto;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .box {
+        height: 50px;
+        width: 300px;
+        background-color: rgb(123, 131, 128);
+        top: 20%;
+        left: 20%;
+        position: absolute;
+        border-radius: 10px;
+    }
+
+    .box i {
+        font-size: 25px;
+        float: right;
+        cursor: pointer;
+        position: absolute;
+        right: 20px;
+        top: 15px;
+    }
+
+    .box i:hover {
+        /* color: white; */
+        transform: rotate(360deg);
+        transition: 0.8s;
+    }
+
+    .box1 {
+        height: 300px;
+        width: 300px;
+        /* background-color: black; */
+        top: 28%;
+        left: 20%;
+        position: absolute;
+        border-radius: 10px;
+        /* display: none; */
+    }
+
+    .slider {
+        left: 100%;
+        position: absolute;
+        width: 300px;
+        height: 0px;
+        position: absolute;
+        top: 5px;
+        background-color: rgb(0, 0, 0);
+        border-radius: 10px;
+    }
+</style>
+
+<body>
+    <div class="box" id="box">
+        <i class="fa-regular fa-plus" id="icon"></i>
+    </div>
+    <div class="box1" id="box1">
+        <div class="slider" id="slider"></div>
+    </div>
+</body>
+<script>
+    icon.onclick = function () {
+        slider.style.height = "295px";
+        slider.style.transition = "0.3s";
+    }
+   
+
+</script>
+
+</html>

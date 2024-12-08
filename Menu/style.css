@@ -1,0 +1,97 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+.navbar {
+    background-color: rgb(5, 22, 5);
+    border-radius: 8px;
+    height: 51px;
+
+}
+
+.navbar img {
+    height: 93px;
+    width: 118 px;
+    float: left;
+    margin-left: 10px;
+    margin-top: -22px;
+}
+
+.navbar ul {
+    overflow: auto;
+    position: relative;
+
+
+}
+
+.navbar li {
+    float: left;
+    padding: 9px 3px;
+    list-style: none;
+    margin: 2px 14px;
+    font-size: 20px;
+}
+
+.navbar li a {
+    /* padding: 3px 3px; */
+    text-decoration: none;
+    color: #b1a8a8;
+    letter-spacing: 0.1em;
+
+}
+
+.navbar li a:hover {
+    color: white;
+}
+
+.navbar button {
+    background-color: rgb(12, 100, 182);
+    border-radius: 4px;
+    margin-left: 284px;
+    margin-top: 7px;
+    font-size: 20px;
+    color: #ccc;
+    cursor: pointer;
+    height: 37px;
+    width: 131px;
+}
+
+.navbar button:hover {
+    color: white;
+
+}
+
+.navbar .icon::before {
+    content: "\f002";
+    color: #d1cecd;
+    font-size: 18px;
+    margin-left: 19px;
+    cursor: pointer;
+    margin-right: 10px;
+
+}
+.fa-globe:before {
+    content: "\f0ac";
+    font-size: 18px;
+    color: #b7afaf;
+    margin-left: 10px;
+}
+
+.navbar span {
+    color: #b9b1b1;
+    font-size: 18px;
+    margin-left: 8px;
+    margin-left: 10px;
+}
+.fa-caret-down:before {
+    content: "\f0d7";
+    color: grey;
+    padding: 2px;
+}
+.fa-user:before {
+    content: "\f007";
+    color: #acb1ac;
+    margin-left: 10px;
+
+}

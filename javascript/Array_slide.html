@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin-top: 20px;
+        margin-left: 30px;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .box {
+        height: 580px;
+        width: 90%;
+    }
+
+    .btn1 {
+        background: grey;
+        color: black;
+        font-size: 15px;
+        margin-top: 300px;
+        margin-left: 10px;
+        border: none;
+    }
+
+    .btn1:hover {
+        color: white;
+        background: darkgreen;
+    }
+
+    .btn2 {
+        background: rgb(106, 87, 87);
+        width: 60px;
+        color: black;
+        font-size: 15px;
+        margin-top: 300px;
+        float: right;
+        margin-right: 10px;
+        border: none;
+    }
+
+    .btn2:hover {
+        color: white;
+        background: darkgreen;
+    }
+</style>
+
+<body>
+    <div class="box" id="box">
+        <Button type="button" class="btn1" id="btn1">Previous</Button>
+        <Button type="button" class="btn2" id="btn2">Next</Button>
+    </div>
+
+    <script>
+        let arr = ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg"];
+        let a = 0;
+
+        window.onload = function () {
+            box.style.backgroundImage = "url(1.jpg)"
+        }
+
+        btn1.onclick = function () {
+            if (a < arr.length) {
+                box.style.backgroundImage = "url(" + arr[a] + ")"
+                a++
+            }
+            else {
+                a = 0
+            }
+        }
+
+        btn2.onclick = function () {
+
+            if (a < arr.length) {
+                box.style.backgroundImage = "url(" + arr[a] + ")"
+                a++
+            }
+            else {
+                a = 0
+            }
+        }
+
+
+
+
+        // let a=0;
+        //    let arr=["yellow","pink","blue","red","orange"];
+        // btn2.onclick=function()
+        // {
+        //     if(a<arr.length)
+        //     {
+        //         box.style.backgroundImage=arr[a]
+        //         a++
+        //     }
+        //     else{
+        //         a=0
+        //     }
+        // }
+
+    </script>
+</body>
+
+</html>

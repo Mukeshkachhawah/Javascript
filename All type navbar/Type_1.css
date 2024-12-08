@@ -1,0 +1,104 @@
+body {
+background: #dedede;
+font-family: arial;
+margin: 0;
+padding: 0;
+
+}
+
+.navbar-content{
+margin: 0 auto;
+
+}
+
+nav {
+background-color: rgb(8, 34, 8);
+height: 51px;
+box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+padding: 5px 0 0 30px;
+width: 106px;
+float: left;
+height: auto;
+margin-top: -13px;
+}
+
+nav ul {
+padding: 0;
+margin: 0;
+float: left;
+margin-left: 20px;
+
+}
+
+nav i:hover {
+animation: rotate 0.2s linear;
+
+}
+
+@keyframes rotate {
+
+/* 0%{
+transform: rotate(0deg);
+} */
+100% {
+transform: rotate(180deg);
+}
+
+}
+
+nav ul li {
+background: #012417;
+position: relative;
+list-style: none;
+display: inline-block;
+}
+
+nav ul li a {
+display: block;
+padding: 0 15px;
+color: white;
+text-decoration: none;
+line-height: 50px;
+font-size: 15px;
+letter-spacing: 2px;
+}
+
+nav  li a:hover {
+background: #1b4232;
+/* color: rgb(25, 50, 54); */
+}
+
+nav ul ul {
+position: absolute;
+top: 50px;
+display: none;
+
+}
+
+nav ul li:hover>ul {
+display: block;
+}
+
+nav ul ul li {
+
+width: 211px;
+float: none;
+display: list-item;
+position: relative;
+}
+
+nav ul ul ul li {
+position: relative;
+top: -40px;
+left: 190px;
+/* width: 150px; */
+
+}
+nav .button
+{
+float: left;
+margin-left: 20px;
+}

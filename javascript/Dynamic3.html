@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+        .box
+        {
+            border: 1px dashed black;
+            height: 100px;
+            width: 100px;
+            margin: auto;
+        }
+    </style>
+<body>
+    <div class="box" id="box" name="dd"></div>
+    <div class="box" id="box" name="dd"></div>
+    <div class="box" id="box" name="dd"></div>
+    <div class="box" id="box" name="dd"></div>
+    <div class="box" id="box" name="dd"></div>
+    <div class="box" id="box" name="dd"></div>
+
+</body>
+<script>
+    mybox = document.getElementsByName("dd");
+   mybox.array.forEach(box => {    
+   
+    box.addEventListner('click',()=>
+    {
+        mypara= document.createElement("p")
+        mypara.innerHTML="This is  a runtime element create"
+        mypara.classList.add("pp")
+        box.appendChild(mypara);
+
+    });
+    });
+</script>
+
+</html>

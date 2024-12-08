@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box {
+        height: 80vh;
+        width: 100%;
+        margin: auto;
+    }
+
+    .one {
+        height: 500px;
+        width: 500px;
+        border: 1px dashed black;
+        float: left;
+        margin: auto;
+        background-color: gray;
+        
+    }
+
+    .img {
+        height: 100px;
+        width: 100px;
+        border: 1px dashed green;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: auto;
+        display: flex;
+    }
+    .para
+    {
+        font-size: 30px;
+        font-family: 'Courier New', Courier, monospace;
+
+    }
+</style>
+
+<body>
+    <button type="button" id="btn">Press</button>
+    <div class="box" id="main">
+
+    </div>
+    <script>
+        btn.onclick = () => {
+            mydiv = document.createElement("div")
+            mydiv.setAttribute("class", "one")
+            mydiv.setAttribute("id", "one")
+            myImg = document.createElement("img")
+            myImg.setAttribute("class", "img")
+            myImg.setAttribute("src", "2.jpg")
+            mypara = document.createElement("p")
+            mypara.setAttribute("class", "para")
+            mypara.setAttribute("id","para")
+            mypara.innerHTML="Press Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi explicabo alias qui rem veniam ipsa sunt, inventore harum adipisci quam, dolore ullam aliquam cumque ex, delectus ab laboriosam vitae voluptatum provident dignissimos"
+            mydiv.appendChild(myImg)
+            mydiv.appendChild(mypara)
+            main.appendChild(mydiv)
+
+
+
+        }
+
+    </script>
+</body>
+
+</html>
