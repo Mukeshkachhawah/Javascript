@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: darkgoldenrod;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#center {
+  height: 300px;
+  width: 220px;
+  margin-top: 10%;
+  border-radius: 10px;
+  background-color: white;
+  padding: 15px;
+  text-align: center;
+  position: relative;
+}
+#center img {
+  object-fit: cover;
+  height: 50%;
+  object-position: center;
+  border-radius: 10px;
+  width: 100%;
+}
+#center h1 {
+  font-size: 20px;
+  letter-spacing: 2px;
+  margin: 10px;
+}
+#center h5 {
+  font-size: 20px;
+  margin: 20px;
+  color: rgb(201, 27, 27);
+}
+#btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#btn-container #add,
+#remove {
+  background-color: rgb(0, 13, 189);
+  color: white;
+  border: none;
+  padding: 5px;
+  font-size: 10px;
+  cursor: pointer;
+  border-radius: 6px;
+  letter-spacing: 2px;
+}
+#remove {
+  background-color: rgb(156, 156, 156);
+  color: black;
+}
+#like1 {
+  color: white;
+  position: absolute;
+  top: 29%;
+  left: 50%;
+  margin-right: 20px;
+  transform: translate(-50%, -50%) scale(0);
+  font-size: 70px;
+  transition: all ease 0.4s;
+  opacity: 0;
+}
+#like2 {
+  color: rgb(156, 156, 156);
+  margin-right: 20px;
+  font-size: 20px;
+}

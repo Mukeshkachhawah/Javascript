@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Caps Lock Detection</title>
+    <style>
+        #status {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Type something and check Caps Lock</h1>
+    <input type="text" id="inputField" placeholder="Type here...">
+    <div id="status"></div>
+
+    <script>
+        const inputField = document.getElementById('inputField');
+        const statusDiv = document.getElementById('status');
+
+        inputField.addEventListener('keydown', function (event) {
+            if (event.getModifierState('CapsLock')) {
+                statusDiv.textContent = "Caps Lock is ON";
+                statusDiv.style.color = "red";
+            } else {
+                statusDiv.textContent = "Caps Lock is OFF";
+                statusDiv.style.color = "green";
+            }
+        });
+    </script>
+</body>
+
+</html>
